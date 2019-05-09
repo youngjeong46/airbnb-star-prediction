@@ -1,0 +1,35 @@
+name: airbnbratings
+channels:
+  - default
+  - conda-forge
+  - anaconda
+  - mlgill
+dependencies:
+  - ipykernel
+  - ipython
+  - ipython_genutils
+  - jupyter_client
+  - jupyter_core
+  - line_profiler
+  - matplotlib
+  - memory_profiler
+  - numpy>=1.16
+  - pandas>=0.24.0
+  - patsy
+  - psutil
+  - python>=3.6
+  - scikit-learn>=0.20
+  - scipy
+  - seaborn
+  - setuptools
+  - statsmodels
+  - flask
+  - flask-cors
+  - psycopg2
+  - mlxtend
+  - imbalanced-learn
+  - ipywidgets
+  - arrow
+  - glm
+  - pygam
+  prefix: /anaconda3/envs/airbnbratings

@@ -10,39 +10,38 @@ The structure of the project organization is adapted from Cliff Clive's [DataSci
 ```
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
+    ├── main.py            <- The top-level src code for this project.
+    ├── setup.sql          <- (Optional) PostgreSQL setup file. (It was not used)
     ├── data
-    │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── results            <- Trained and serialized models, model predictions, or model summaries
+    │   ├── models         <- Generated model records stored in pickle files
+    │   └── records        <- All generated records about the project in pickle files
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
+    │                         The step in the workflow (i.e. Obtain_Data)
+    │                         `1_Obtain_Data.ipynb`.
     │
     ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    │   ├── figures        <- Generated graphics and figures to be used in reporting
+    │   ├── MVP.ipynb      <- The general overview of project in Jupyter Notebook.
+    │   └── slide_deck     <- Slide deck for a short presentation.
     │
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    │   ├── obtain.py      <- Makes src a Python module
+    │   ├── scrub.py       <- Makes src a Python module
+    │   ├── explore.py     <- Makes src a Python module
+    │   ├── model.py       <- Makes src a Python module
+    │   ├── interpret.py   <- Makes src a Python module
+    │
+    ├── webapp             <- (Optional) Source code for web application, written in Flask.
+
 ```
 
 
