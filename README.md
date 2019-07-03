@@ -51,7 +51,6 @@ The structure of the project organization is adapted from Cliff Clive's [DataSci
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
     ├── main.py            <- The top-level src code for this project.
-    ├── setup.sql          <- (Optional) PostgreSQL setup file. (It was not used)
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
@@ -70,15 +69,10 @@ The structure of the project organization is adapted from Cliff Clive's [DataSci
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   ├── figures        <- Generated graphics and figures to be used in reporting
     │   ├── MVP.ipynb      <- The general overview of project in Jupyter Notebook.
-    │   └── slide_deck     <- Slide deck for a short presentation.
+    │   ├── slides.pdf     <- Slide deck for a short presentation.
+    │   └── summary.pdf    <- summary of the project
     │
     ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   ├── obtain.py      <- Makes src a Python module
-    │   ├── scrub.py       <- Makes src a Python module
-    │   ├── explore.py     <- Makes src a Python module
-    │   ├── model.py       <- Makes src a Python module
-    │   ├── interpret.py   <- Makes src a Python module
 
 ```
 
